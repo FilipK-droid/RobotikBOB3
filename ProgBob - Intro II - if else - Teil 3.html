@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)https://www.progbob.org/de/bob3/tutorials/intro2/if_else_3.html -->
+<html lang="de"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/png" href="https://www.progbob.org/favicon.png" sizes="32x32">
+    <title>ProgBob - Intro II - if else - Teil 3</title>
+
+    <link rel="stylesheet" href="./ProgBob - Intro II - if else - Teil 3_files/bootstrap.min.css">
+    <link rel="stylesheet" href="./ProgBob - Intro II - if else - Teil 3_files/font-awesome.min.css">
+    
+    <!--link rel="preload" href="/pictures/navline_0.svg" as="image">
+    <link rel="preload" href="/pictures/navline_1.svg" as="image">
+    <link rel="preload" href="/pictures/navline_2.svg" as="image"-->
+    <link rel="preload" href="https://www.progbob.org/css/Ubuntu.css" as="style">
+    
+    <link rel="prefetch" href="https://www.progbob.org/pictures/navline_0.svg">
+    <link rel="prefetch" href="https://www.progbob.org/pictures/navline_1.svg">
+    <link rel="prefetch" href="https://www.progbob.org/pictures/navline_2.svg">
+    
+    <link rel="stylesheet" href="./ProgBob - Intro II - if else - Teil 3_files/8E3C23BFBA6950385FA94BD5A510F20_ycp.css">
+    
+    <script src="./ProgBob - Intro II - if else - Teil 3_files/jquery-1.12.4.min.js.Herunterladen"></script>
+    
+    <style>
+      
+      #navigation-hint-compile,
+      #navigation-hint-file,
+      #navigation-hint-next-chapter {
+        display: none;
+      }
+      
+      
+    </style>
+  </head>
+
+  
+  <body class="sys-non-mac sys-non-ios sys-non-android sys-non-linux sys-non-unknown sys-win loaded">
+    <div id="page-loader" style="display: none;"><div class="loader-head"></div><div class="loader-cont"><div class="loader-icon-div">Loading...</div></div><div class="loader-foot"></div></div>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="https://www.progbob.org/">ProgBob</a>
+           <a href="https://www.bob3.org/" style="float: left; margin: 20px;"><img src="./ProgBob - Intro II - if else - Teil 3_files/bob3icon_blk_grey.png" alt="bob3-icon" width="16"> bob3.org</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          
+          <div class="navbar-form navbar-right">
+            <h4 style="display: inline-block; color: #fff; vertical-align: -2px;">Intro II</h4><div class="nav-div navigator double w30"><div class="nav-bg" aria-hidden="true"><div><div class="top"></div><div class="mid line"></div><div class="bot"></div></div><div><div class="top"></div><div class="mid line"></div><div class="bot"></div></div><div><div class="top"></div><div class="mid line"></div><div class="bot"></div></div><div><div class="top"></div><div class="mid line"></div><div class="bot"></div></div><div><div class="top"></div><div class="mid line"></div><div class="bot"></div></div><div><div class="top"></div><div class="mid line"></div><div class="bot"></div></div><div><div class="top curve up"></div><div class="mid"></div><div class="bot curve down"></div></div><div><div class="top curve down"></div><div class="mid"></div><div class="bot curve up"></div></div><div><div class="top"></div><div class="mid line"></div><div class="bot"></div></div><div><div class="top"></div><div class="mid line"></div><div class="bot"></div></div><div><div class="top"></div><div class="mid line"></div><div class="bot"></div></div><div><div class="top"></div><div class="mid line"></div><div class="bot"></div></div><div><div class="top"></div><div class="mid line"></div><div class="bot"></div></div><div><div class="top"></div><div class="mid line"></div><div class="bot"></div></div><div><div class="top curve up"></div><div class="mid"></div><div class="bot curve down"></div></div><div><div class="top curve down"></div><div class="mid"></div><div class="bot curve up"></div></div></div><div class="nav-fg" aria-hidden="true"><div><div class="fg-top"></div><div class="fg-mid"><a href="https://www.progbob.org/de/bob3/tutorials/intro2/if_else_1.html" class="nav15 solved" data-toggle="tooltip" data-placement="left" title="" data-original-title="if else - Teil 1"><i class="start"></i></a></div><div class="fg-bot"></div></div><div><div class="fg-top"></div><div class="fg-mid"><a href="https://www.progbob.org/de/bob3/tutorials/intro2/if_else_2.html" class="nav10 solved" data-toggle="tooltip" data-placement="left" title="" data-original-title="if else - Teil 2"><i class="nav-content"></i></a></div><div class="fg-bot"></div></div><div><i class="pulse_rays"></i><div class="fg-top"></div><div class="fg-mid"><a href="https://www.progbob.org/de/bob3/tutorials/intro2/if_else_3.html" class="nav10 solved current" data-toggle="tooltip" data-placement="left" title="" data-original-title="if else - Teil 3"><i class="nav-content"></i></a></div><div class="fg-bot"></div></div><div><div class="fg-top"></div><div class="fg-mid"><a href="https://www.progbob.org/de/bob3/tutorials/intro2/heizung.html" class="nav10 solved" data-toggle="tooltip" data-placement="left" title="" data-original-title="Heizung"><i class="nav-content"></i></a></div><div class="fg-bot"></div></div><div><div class="fg-top"></div><div class="fg-mid"><a href="https://www.progbob.org/de/bob3/tutorials/intro2/zoo.html" class="nav10 solved" data-toggle="tooltip" data-placement="left" title="" data-original-title="Bob zählt im Zoo"><i class="nav-content"></i></a></div><div class="fg-bot"></div></div><div><div class="fg-top"></div><div class="fg-mid"><a href="https://www.progbob.org/de/bob3/tutorials/intro2/ir_sensor_1.html" class="nav10 solved" data-toggle="tooltip" data-placement="left" title="" data-original-title="IR-Sensor Teil 1"><i class="nav-content"></i></a></div><div class="fg-bot"></div></div><div><div class="fg-top"></div><div class="fg-mid"><a href="https://www.progbob.org/de/bob3/tutorials/intro2/ir_sensor_2.html" class="nav20 solved" data-toggle="tooltip" data-placement="left" title="" data-original-title="IR-Sensor Teil 2"></a></div><div class="fg-bot"></div></div><div><div class="fg-top"><a href="https://www.progbob.org/de/bob3/tutorials/intro2/eisberg.html" class="nav7 inactive" data-toggle="tooltip" data-placement="left" title="" data-original-title="Eisberg Detektor"></a></div><div class="fg-mid"></div><div class="fg-bot"><a href="https://www.progbob.org/de/bob3/tutorials/intro2/eisberg_plus.html" class="nav7 inactive" data-toggle="tooltip" data-placement="left" title="" data-original-title="Eisberg Detektor Profi"></a></div></div><div><div class="fg-top"></div><div class="fg-mid"><a href="https://www.progbob.org/de/bob3/tutorials/intro2/temperatur.html" class="nav20 inactive" data-toggle="tooltip" data-placement="left" title="" data-original-title="Temperatur Sensor"></a></div><div class="fg-bot"></div></div><div><div class="fg-top"></div><div class="fg-mid"><a href="https://www.progbob.org/de/bob3/tutorials/intro2/setled.html" class="nav10 inactive" data-toggle="tooltip" data-placement="left" title="" data-original-title="bob3.setLed()"><i class="nav-content"></i></a></div><div class="fg-bot"></div></div><div><div class="fg-top"></div><div class="fg-mid"><a href="https://www.progbob.org/de/bob3/tutorials/intro2/for_1.html" class="nav10 inactive" data-toggle="tooltip" data-placement="left" title="" data-original-title="for-Schleife Teil 1"><i class="nav-content"></i></a></div><div class="fg-bot"></div></div><div><div class="fg-top"></div><div class="fg-mid"><a href="https://www.progbob.org/de/bob3/tutorials/intro2/for_2.html" class="nav10 inactive" data-toggle="tooltip" data-placement="left" title="" data-original-title="for-Schleife Teil 2"><i class="nav-content"></i></a></div><div class="fg-bot"></div></div><div><div class="fg-top"></div><div class="fg-mid"><a href="https://www.progbob.org/de/bob3/tutorials/intro2/for_3.html" class="nav10 inactive" data-toggle="tooltip" data-placement="left" title="" data-original-title="for-Schleife Teil 3"><i class="nav-content"></i></a></div><div class="fg-bot"></div></div><div><div class="fg-top"></div><div class="fg-mid"><a href="https://www.progbob.org/de/bob3/tutorials/intro2/for_4.html" class="nav10 inactive" data-toggle="tooltip" data-placement="left" title="" data-original-title="for-Schleife Teil 4"><i class="nav-content"></i></a></div><div class="fg-bot"></div></div><div><div class="fg-top"></div><div class="fg-mid"><a href="https://www.progbob.org/de/bob3/tutorials/intro2/for_5.html" class="nav20 inactive" data-toggle="tooltip" data-placement="left" title="" data-original-title="for-Schleife Teil 5"></a></div><div class="fg-bot"></div></div><div><div class="fg-top"><a href="https://www.progbob.org/de/bob3/tutorials/intro2/geburtstag.html" class="nav7 inactive" data-toggle="tooltip" data-placement="left" title="" data-original-title="Oma&#39;s Geburtstag"></a></div><div class="fg-mid"></div><div class="fg-bot"><a href="https://www.progbob.org/de/bob3/tutorials/intro2/geburtstag_plus.html" class="nav7 inactive" data-toggle="tooltip" data-placement="left" title="" data-original-title="Oma&#39;s Geburtstag - Profi"></a></div></div><div><div class="fg-top"></div><div class="fg-mid"><a href="https://www.progbob.org/de/bob3/tutorials/intro2/final.html" class="nav15 inactive" data-toggle="tooltip" data-placement="left" title="" data-original-title="Finale"><i class="goal"></i></a></div><div class="fg-bot"></div></div></div></div>          
+            
+                          <div id="dropdown-user" class="dropdown">
+                <button type="button" class="btn btn-default dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="fa fa-user" aria-hidden="true"></i> <small>hxy-Filip</small> <span class="caret"></span></button>
+                <ul class="dropdown-menu multi-level" aria-labelledby="dropdownMenu1">
+                                    <li><a href="https://www.progbob.org/de/bob3/tutorials/intro2/if_else_3.html#" data-exec-cmd="dialog-change-password"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Passwort ändern...</a></li>
+                  <li><a href="https://www.progbob.org/de/bob3/tutorials/intro2/if_else_3.html#" data-exec-cmd="dialog-change-mail"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> EMail ändern...</a></li>
+                                                      <li><a href="https://www.progbob.org/de/specials/initial.html"><span class="glyphicon glyphicon-cloud" aria-hidden="true"></span> Initialprogramm...</a></li>
+                  <li class="disabled" style="display: none;"><a href="https://www.progbob.org/de/bob3/tutorials/intro2/if_else_3.html#" id="menu-item-enable-sound"><span class="glyphicon glyphicon-volume-off" aria-hidden="true"></span> Sound ist aus</a></li>
+                  <li class="disabled"><a href="https://www.progbob.org/de/bob3/tutorials/intro2/if_else_3.html#" id="menu-item-disable-sound"><span class="glyphicon glyphicon-volume-up" aria-hidden="true"></span> Sound ist an</a></li>
+                  
+                  <li class="dropdown-submenu open-left">
+                    <a tabindex="-1" href="https://www.progbob.org/de/bob3/tutorials/intro2/if_else_3.html#"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span> Sprache wechseln</a>
+                    <ul class="dropdown-menu">
+                      <li><a tabindex="-1" href="https://www.progbob.org/de/bob3/tutorials/intro2/if_else_3.html#"><b>Deutsch</b></a></li>                      <li class="disabled"><a href="https://www.progbob.org/en/bob3/tutorials/intro/">English</a></li>                    </ul>
+                  </li>
+                  
+                  <li class="dropdown-submenu open-left">
+                    <a tabindex="-1" href="https://www.progbob.org/de/bob3/tutorials/intro2/if_else_3.html#"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Bob-Typ</a>
+                    <ul id="user-dropdown-edition" class="dropdown-menu" style="min-width: 13em;">
+                      <li id="select-edition-tht"><a href="https://www.progbob.org/de/bob3/tutorials/intro2/if_else_3.html#">B·O·B·3</a></li>
+<li id="select-edition-smd" class="selected"><a href="https://www.progbob.org/de/bob3/tutorials/intro2/if_else_3.html#">B·O·B·3 - SMD edition</a></li>
+                    </ul>
+                  </li>
+
+                  <li role="separator" class="divider"></li>
+                  <li><a href="https://www.progbob.org/de/bob3/tutorials/intro2/if_else_3.html#" id="menu-item-logout"><span class="glyphicon glyphicon-off" aria-hidden="true"></span> Logout...</a></li>
+                </ul>
+              </div>
+                      </div>  
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+
+
+    <article class="container">
+      <!-- row of columns -->
+      <div class="row">
+        <div id="medal-col" class="col-md-1">
+          <aside class="pb-container-s medals" style="margin-top: 40px; margin-bottom: 10px;">
+            <h4>Medals</h4>
+            <p><span class="btn btn-warning medal medal-coder level-2" role="button" data-toggle="tooltip" data-placement="right" title="" data-original-title="&lt;b&gt;Second level coder&lt;/b&gt; - Langsam kennst Du Dich aus!"><span class="span-1"></span><span class="span-2"></span><span class="span-3"></span><span class="span-4"></span></span></p><p><span class="btn btn-warning medal medal-eye level-2" role="button" data-toggle="tooltip" data-placement="right" title="" data-original-title="&lt;b&gt;Double-eye bob user&lt;/b&gt; - Du kannst beide Augen farbig einschalten!"><span class="span-1"></span><span class="span-2"></span></span></p><p><span class="btn btn-warning medal medal-color level-0" role="button" data-toggle="tooltip" data-placement="right" title="" data-original-title="Du hast noch keine Farb-Medaille"><span class="span-1"></span><span class="span-2"></span></span></p><p><span class="btn btn-warning medal medal-wizard level-0" role="button" data-toggle="tooltip" data-placement="right" title="" data-original-title="Du hast noch keine Sensor-Medaille"><span class="span-1"></span><span class="span-2"></span></span></p><p><span class="btn btn-warning medal medal-toolchain level-0" role="button" data-toggle="tooltip" data-placement="right" title="" data-original-title="Du hast noch keine Toolchain-Medaille"><span class="span-1"></span><span class="span-2"></span></span></p><p><span class="btn btn-warning medal medal-bug level-0" role="button" data-toggle="tooltip" data-placement="right" title="" data-original-title="Du hast noch keine Bug-Hunter-Medaille"><span class="span-1"></span><span class="span-2"></span></span></p><p><span class="btn btn-warning medal medal-comm level-0" role="button" data-toggle="tooltip" data-placement="right" title="" data-original-title="Du hast noch keine Nachrichten von Alice zu Bob geschickt..."><span class="span-1"></span><span class="span-2"></span></span></p><p><span class="btn btn-warning medal medal-diamonds level-1" role="button" data-toggle="tooltip" data-placement="right" title="" data-original-title="&lt;b&gt;Diamanten&lt;/b&gt; - alles reiner Kohlenstoff!"><span class="span-1"></span><span class="span-2">30</span></span></p><p><span class="btn btn-warning medal medal-pokal level-1" role="button" data-toggle="tooltip" data-placement="right" title="" data-original-title="&lt;b&gt;Glückwunsch!&lt;/b&gt; - Du hast schon das erste Tutorial gelöst!"><span class="span-1"></span><span class="span-2"></span></span></p><p><a href="https://www.progbob.org/de/specials/speedy.html" class="btn btn-warning medal special-medal medal-special-1 level-1" role="button" data-toggle="tooltip" data-placement="right" title="" data-original-title="BONUS-GAME: &lt;b&gt;Speedy&lt;/b&gt;&lt;br/&gt;Sei schneller als dein Mitspieler!"><span class="span-1"></span><span class="span-2"></span></a><a href="https://www.progbob.org/de/specials/recall.html" class="btn btn-warning medal special-medal medal-special-2 level-0" role="button" data-toggle="tooltip" data-placement="right" title="" data-original-title="BONUS-GAME: &lt;b&gt;Recall&lt;/b&gt;&lt;br/&gt;Wie viele Bit kannst du dir merken?"><span class="span-1"></span><span class="span-2"></span></a></p>          </aside>
+        </div>
+        
+        <div id="code-col" class="col-md-6">
+<!-- BEGIN EDITOR  -->
+<section class="pb-container" style="position: relative; height: 713px; margin-top: 40px; margin-bottom: 10px;">
+
+<!-- ************ Textarea mit Quellcode - Start ************ -->
+<textarea id="code" name="code" cols="90" rows="50" style="width: 100%; height: 100%; display: none;">#include &lt;BOB3.h&gt;
+
+// BOB3 als Wahrheitsfinder:
+// Grundschüler oder nicht?
+
+void setup() {
+    
+}
+
+void loop() {
+ 
+  int geburtsjahr;
+  geburtsjahr = 2008;
+  
+  // Grundschüler detektiert -&gt; Augen orange
+  if (geburtsjahr &gt; 2009) {
+    bob3.setEyes(ORANGE, ORANGE);
+  }
+  // Sonst -&gt; Augen blau
+  else {
+    bob3.setEyes(ROYALBLUE, ROYALBLUE);
+  }
+  
+}
+</textarea><div class="CodeMirror cm-s-default"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 6px; left: 36px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;" tabindex="0"></textarea></div><div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 30px; margin-bottom: -17px; border-right-width: 13px; min-height: 458px; min-width: 403.078px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><span><span>​</span>x</span></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"><div class="CodeMirror-cursor" style="left: 4px; top: 0px; height: 18px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: -30px; width: 30px;"></div><div class="CodeMirror-gutter-wrapper CodeMirror-activeline-gutter" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-meta">#include &lt;BOB3.h&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">2</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">3</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">// BOB3 als Wahrheitsfinder:</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">4</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">// Grundschüler oder nicht?</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">5</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">6</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-type">void</span> <span class="cm-variable-2">setup</span>() {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">7</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">    </span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">8</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">9</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">10</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-type">void</span> <span class="cm-variable-2">loop</span>() {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">11</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> </span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">12</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  <span class="cm-type">int</span> <span class="cm-variable">geburtsjahr</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">13</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  <span class="cm-variable">geburtsjahr</span> <span class="cm-operator">=</span> <span class="cm-number">2008</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">14</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  </span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">15</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  <span class="cm-comment">// Grundschüler detektiert -&gt; Augen orange</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">16</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  <span class="cm-keyword">if</span> (<span class="cm-variable">geburtsjahr</span> <span class="cm-operator">&gt;</span> <span class="cm-number">2009</span>) {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">17</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">    <span class="cm-variable-2">bob3</span>.<span class="cm-variable-2">setEyes</span>(<span class="cm-constant-2">ORANGE</span>, <span class="cm-constant-2">ORANGE</span>);</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">18</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  }</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">19</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  <span class="cm-comment">// Sonst -&gt; Augen blau</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">20</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  <span class="cm-keyword">else</span> {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">21</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">    <span class="cm-variable-2">bob3</span>.<span class="cm-variable-2">setEyes</span>(<span class="cm-constant-2">ROYALBLUE</span>, <span class="cm-constant-2">ROYALBLUE</span>);</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">22</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  }</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">23</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  </span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">24</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">25</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 13px; width: 1px; border-bottom: 0px solid transparent; top: 458px;"></div><div class="CodeMirror-gutters" style="height: 471px;"><div class="CodeMirror-gutter note-gutter"></div><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 29px;"></div></div></div></div>
+
+<textarea id="originalcode" style="display:none;">#include &lt;BOB3.h&gt;
+
+// BOB3 als Wahrheitsfinder:
+// Grundschüler oder nicht?
+
+void setup() {
+    
+}
+
+void loop() {
+ 
+  int geburtsjahr;
+  geburtsjahr = 2008;
+  
+  // Grundschüler detektiert -&gt; Augen orange
+  if (geburtsjahr &gt; 2009) {
+    bob3.setEyes(ORANGE, ORANGE);
+  }
+  // Sonst -&gt; Augen blau
+  else {
+    bob3.setEyes(ROYALBLUE, ROYALBLUE);
+  }
+  
+}
+</textarea>
+
+
+
+<!-- ************ Textarea mit Quellcode - Ende ************ -->
+
+<div id="reset"><button onclick="resetCode();">↺ Quelltext zurücksetzen</button></div>
+
+<div id="compiler-busy" class="compiler-busy">
+<div class="loader"></div>
+</div>
+</section>
+<!-- END EDITOR  -->
+        </div>
+       
+        <div id="text-col" class="col-md-4">
+          <!-- BEGIN INFO  -->
+          <section class="pb-container tutorial tut-intro2" id="right_main" style="height: 713px; margin-top: 40px; margin-bottom: 10px;">
+            <div class="caption"><h3>if else - Teil 3</h3></div>
+            <div id="right_main_content">
+              <div id="detsel"><ul id="ul_details"><li class="active"><div class="bubble bubble-info"></div><div class="line"></div><div class="next-arrow">▼</div></li><li class=""><div class="bubble bubble-info"></div><div class="line"></div><div class="next-arrow">▼</div></li><li class=""><div class="bubble bubble-info"></div><div class="line"></div><div class="next-arrow">▼</div></li><li class=""><div class="bubble bubble-task"></div><div class="line"></div><div class="next-arrow">▼</div></li><li class="no-next-arrow"><div class="bubble bubble-quiz"></div><div class="line"></div><div class="next-arrow">▼</div></li></ul></div><div id="details"><div class="info page" style="display: block;"><h4>__info__</h4><div class="detail-content"><p><b>Grundschüler</b> oder <b>nicht</b>?</p>
+    <p>Jetzt soll BOB3 dir sagen, ob du noch ein Grundschüler bist oder eben nicht!</p>
+    <p>Du gibst dein <b>Geburtsjahr</b> ein und BOB3 entscheidet dann!</p>
+    <p>Falls du ein <b>Grundschüler</b> bist, leuchten die Augen <b>orange</b>. Falls <b>nicht</b>, dann leuchten die Augen <b>blau</b>!</p></div></div><div class="info page" style="display: none;"><h4>__info__</h4><div class="detail-content"><p>Für unser Programm verwenden wir eine neue <b>Variable</b> <code class="cm-s-default"><span class="cm-variable">geburtsjahr</span></code>. In dieser Variable wollen wir dein Geburtsjahr <b>abspeichern</b> und auch wieder <b>abrufen</b> können.</p>
+    <p>Um eine neue Variable zu deklarieren, also zu erschaffen, muss man den <b>Typ</b> und einen <b>Namen</b> festlegen. Das machen wir in Zeile&nbsp;12:</p>
+    <pre class="p-style cm-s-default"><span class="cm-type">int</span> <span class="cm-variable">geburtsjahr</span>;</pre>
+    <p>Unsere Variable ist vom Typ Integer, also <code class="cm-s-default"><span class="cm-type">int</span></code>. Diesen Typ verwendet man für <b>ganze Zahlen</b> wie z.B. 3 oder 100 oder 2010 usw.</p>
+    <p>Als Namen haben wir <code class="cm-s-default"><span class="cm-variable">geburtsjahr</span></code> ausgesucht, weil wir das ja auch abspeichern wollen!</p></div></div><div class="info page" style="display: none;"><h4>__info__</h4><div class="detail-content"><p>In Zeile 13 wird unsere neue Variable <b>initialisiert</b>, das heißt sie bekommt erstmalig einen Wert zugewiesen:</p>
+    <pre class="p-style cm-s-default"><span class="cm-variable">geburtsjahr</span> <span class="cm-operator">=</span> <span class="cm-number">2008</span>;</pre>
+    <p>Für den Compiler ist ab jetzt die Variable <code class="cm-s-default"><span class="cm-variable">geburtsjahr</span></code> gleichbedeutend mit der Zahl <code class="cm-s-default"><span class="cm-number">2008</span></code>.</p>
+    <p>Jetzt können wir in unserem eigentlichen Wahrheitsfinder (Zeilen&nbsp;16 -&nbsp;22) die Variable verwenden!</p></div></div><div class="task page" style="display: none;"><h4>__aufgabe__</h4><div class="detail-content"><div class="alert alert-warning p-style" role="alert">Gib in Zeile&nbsp;13 dein Geburtsjahr ein und teste, ob du noch ein Grundschüler bist!</div>
+    <div class="p-style task-compile block"><span class="txt-compile no-text"></span> Compiliere das neue Programm und übertrage es auf den BOB3.</div></div></div><div class="quiz page" style="display: none;"><h4>__quiz__</h4><div class="detail-content"><form id="quiz1" class="quiz"><input type="hidden" name="qid" value="1"><div class="question"><div><span><b>1:</b> Welcher Programm-Code ist richtig?</span><span id="q1_r" class="quiz_result"></span></div><div><div class="radio user-nomark"><label><input type="radio" name="q1" value="1"> <code class="cm-s-default"><span class="cm-variable-3">integer</span> <span class="cm-variable">geburtsjahr</span> <span class="cm-operator">=</span> <span class="cm-number">2000</span>;</code></label></div><div class="radio user-mark"><label><input type="radio" name="q1" value="2"> <code class="cm-s-default"><span class="cm-type">int</span> <span class="cm-variable">geburtsjahr</span> <span class="cm-operator">=</span> <span class="cm-number">2000</span>;</code></label></div><div class="radio user-nomark"><label><input type="radio" name="q1" value="3"> <code class="cm-s-default"><span class="cm-variable-3">integer</span> <span class="cm-variable">geburtsjahr</span> <span class="cm-operator">:</span> <span class="cm-number">2000</span>;</code></label></div><div class="radio user-nomark"><label><input type="radio" name="q1" value="4"> <code class="cm-s-default"><span class="cm-variable-3">int</span> <span class="cm-variable">geburtsjahr</span> <span class="cm-operator">:</span> <span class="cm-number">2000</span>;</code></label></div></div></div><div class="quiz_check quiz-1" style="position: relative;"><button id="quiz1-submit" type="submit" class="btn btn-danger quiz-submit"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Quiz auswerten!</button><button class="btn btn-default quiz-restore" style="position: absolute;right: 0;border-color: white;" type="reset"><i class="fa fa-undo" aria-hidden="true"></i></button></div><div id="quiz_result_all" class="quiz_result_all"><div class="q_nothing"><span class="smily">&nbsp;</span><span class="text">Du hast nichts ausgefüllt!</span></div><div class="q_someright"><span class="smily">&nbsp;</span><span class="text">Prima, soweit richtig…</span></div><div class="q_allright"><span class="smily">&nbsp;</span><span class="text">Prima, alles richtig!</span></div><div class="q_allwrong"><span class="smily">&nbsp;</span><span class="text">Leider falsch…</span></div><div class="q_oneright"><span class="smily">&nbsp;</span><span class="text">Eine Antwort ist richtig</span></div><div class="q_somewrong"><span class="smily">&nbsp;</span><span class="text">Schon ein paar richtig…</span></div></div><textarea class="hidden raw">&lt;ul class="quiz-single"&gt;&lt;li class="quiz-question"&gt;Welcher Programm-Code ist richtig?&lt;/li&gt;&lt;li class="quiz-wrong"&gt;&lt;code class="cm-s-default"&gt;&lt;span class="cm-variable-3"&gt;integer&lt;/span&gt; &lt;span class="cm-variable"&gt;geburtsjahr&lt;/span&gt; &lt;span class="cm-operator"&gt;=&lt;/span&gt; &lt;span class="cm-number"&gt;2000&lt;/span&gt;;&lt;/code&gt;&lt;/li&gt;&lt;li class="quiz-correct"&gt;&lt;code class="syntax-bob3"&gt;int geburtsjahr = 2000;&lt;/code&gt;&lt;/li&gt;&lt;li class="quiz-wrong"&gt;&lt;code class="cm-s-default"&gt;&lt;span class="cm-variable-3"&gt;integer&lt;/span&gt; &lt;span class="cm-variable"&gt;geburtsjahr&lt;/span&gt; &lt;span class="cm-operator"&gt;:&lt;/span&gt; &lt;span class="cm-number"&gt;2000&lt;/span&gt;;&lt;/code&gt;&lt;/li&gt;&lt;li class="quiz-wrong"&gt;&lt;code class="cm-s-default"&gt;&lt;span class="cm-variable-3"&gt;int&lt;/span&gt; &lt;span class="cm-variable"&gt;geburtsjahr&lt;/span&gt; &lt;span class="cm-operator"&gt;:&lt;/span&gt; &lt;span class="cm-number"&gt;2000&lt;/span&gt;;&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;</textarea></form></div></div><div class="bginfo" style="display: none;"><span class="text-danger glyphicon glyphicon-arrow-left" aria-hidden="true"></span></div><div class="editor" style="display: none;"><div class="btn-group" data-toggle="buttons"><label class="btn btn-sm btn-tut-info"><input type="radio" name="details-type" id="option1" autocomplete="off">info</label><label class="btn btn-sm btn-tut-task"><input type="radio" name="details-type" id="option2" autocomplete="off">aufgabe</label><label class="btn btn-sm btn-tut-quiz"><input type="radio" name="details-type" id="option3" autocomplete="off">quiz</label></div><div class="tinymce">The description text</div></div></div>            </div>
+          </section>
+          <!-- END INFO  -->
+        </div>
+        
+        <div id="tutorial-col" class="col-md-1">
+          <aside class="pb-container-s tutorials" style="margin-top: 40px; margin-bottom: 10px;">
+            <h4>Tutorials</h4>
+            <p><a class="btn btn-default tutorial-finished btn-block tutorial-intro" href="https://www.progbob.org/de/bob3/tutorials/intro" role="button" data-toggle="tooltip" data-placement="left" title="" data-original-title="Erste Schritte mit BOB3&lt;br/&gt;Verfügbare Medaillen:&lt;br/&gt;&lt;i class=&#39;medal-xs medal-eye&#39;&gt;&lt;/i&gt;&lt;i class=&#39;medal-xs medal-eye&#39;&gt;&lt;/i&gt;&lt;i class=&#39;medal-xs medal-coder&#39;&gt;&lt;/i&gt;&lt;i class=&#39;medal-xs medal-pokal&#39;&gt;&lt;/i&gt;">Intro I <span class="glyphicon glyphicon-ok" aria-hidden="true"></span></a></p><p><a class="btn btn-default tutorial-current btn-block tutorial-intro" href="https://www.progbob.org/de/bob3/tutorials/intro2" role="button" data-toggle="tooltip" data-placement="left" title="" data-original-title="Kontrollstrukturen: Gewinn die Kontrolle über BOB3&lt;br/&gt;Medals: &lt;i class=&#39;medal-xs medal-coder&#39;&gt;&lt;/i&gt;&lt;i class=&#39;medal-xs medal-toolchain&#39;&gt;&lt;/i&gt;&lt;i class=&#39;medal-xs medal-bug&#39;&gt;&lt;/i&gt;&lt;i class=&#39;medal-xs medal-pokal&#39;&gt;&lt;/i&gt;">Intro II</a></p><p><button class="btn btn-default btn-halfblock tutorial-friends disabled" data-toggle="tooltip" data-placement="left" title="" data-original-title="&lt;b&gt;Du benötigst Intro I+II&lt;/b&gt;&lt;br/&gt;Friendship detector...&lt;br/&gt;Medal: &lt;i class=&#39;medal-xs medal-pokal&#39;&gt;&lt;/i&gt;"><i class="fa fa-heart" aria-hidden="true"></i></button><button class="btn btn-default btn-halfblock tutorial-police disabled" data-toggle="tooltip" data-placement="left" title="" data-original-title="&lt;b&gt;Du benötigst Intro I+II&lt;/b&gt;&lt;br/&gt;Police lights!&lt;br/&gt;Medal: &lt;i class=&#39;medal-xs medal-pokal&#39;&gt;&lt;/i&gt;"><i class="fa fa-cab" aria-hidden="true"></i></button></p><p><button class="btn btn-default btn-block tutorial-intro disabled" data-toggle="tooltip" data-placement="left" title="" data-original-title="&lt;b&gt;Du benötigst Intro I+II&lt;/b&gt;&lt;br/&gt;Deine erste eigene Funktion...&lt;br/&gt;Medals: &lt;i class=&#39;medal-xs medal-coder&#39;&gt;&lt;/i&gt;&lt;i class=&#39;medal-xs medal-coder&#39;&gt;&lt;/i&gt;&lt;i class=&#39;medal-xs medal-toolchain&#39;&gt;&lt;/i&gt;&lt;i class=&#39;medal-xs medal-pokal&#39;&gt;&lt;/i&gt;">Intro III</button></p><p><button class="btn btn-default btn-halfblock tutorial-photo disabled" data-toggle="tooltip" data-placement="left" title="" data-original-title="&lt;b&gt;Du benötigst Intro I+II+III&lt;/b&gt;&lt;br/&gt;Photo-Flash&lt;br/&gt;Medal: &lt;i class=&#39;medal-xs medal-pokal&#39;&gt;&lt;/i&gt;"><i class="fa fa-lg fa-camera" aria-hidden="true"></i></button><button class="btn btn-default btn-halfblock tutorial-alarm disabled" data-toggle="tooltip" data-placement="left" title="" data-original-title="&lt;b&gt;Du benötigst Intro I+II+III&lt;/b&gt;&lt;br/&gt;Alarmanlage&lt;br/&gt;Medal: &lt;i class=&#39;medal-xs medal-pokal&#39;&gt;&lt;/i&gt;"><i class="fa fa-lg fa-diamond" aria-hidden="true"></i></button></p><p><button class="btn btn-default btn-block tutorial-standard disabled" data-toggle="tooltip" data-placement="left" title="" data-original-title="&lt;b&gt;Du benötigst Intro I+II+III&lt;/b&gt;&lt;br/&gt;Objekte mit dem IR-Sensor detektieren&lt;br/&gt;Medals: &lt;i class=&#39;medal-xs medal-coder&#39;&gt;&lt;/i&gt;&lt;i class=&#39;medal-xs medal-wizard&#39;&gt;&lt;/i&gt;&lt;i class=&#39;medal-xs medal-wizard2&#39;&gt;&lt;/i&gt;&lt;i class=&#39;medal-xs medal-pokal&#39;&gt;&lt;/i&gt;">Sense</button></p><p><button class="btn btn-default btn-block tutorial-standard disabled" data-toggle="tooltip" data-placement="left" title="" data-original-title="&lt;b&gt;Du benötigst Intro I+II+III&lt;/b&gt;&lt;br/&gt;Auf Berührungen reagieren&lt;br/&gt;Medals: &lt;i class=&#39;medal-xs medal-coder&#39;&gt;&lt;/i&gt;&lt;i class=&#39;medal-xs medal-wizard&#39;&gt;&lt;/i&gt;&lt;i class=&#39;medal-xs medal-wizard2&#39;&gt;&lt;/i&gt;&lt;i class=&#39;medal-xs medal-pokal&#39;&gt;&lt;/i&gt;">Touch</button></p><p><button class="btn btn-default btn-block tutorial-standard disabled" data-toggle="tooltip" data-placement="left" title="" data-original-title="&lt;b&gt;Du benötigst Intro I+II+III&lt;/b&gt;&lt;br/&gt;Lerne etwas über Farben&lt;br/&gt;Medals: &lt;i class=&#39;medal-xs medal-coder&#39;&gt;&lt;/i&gt;&lt;i class=&#39;medal-xs medal-color&#39;&gt;&lt;/i&gt;&lt;i class=&#39;medal-xs medal-color&#39;&gt;&lt;/i&gt;&lt;i class=&#39;medal-xs medal-pokal&#39;&gt;&lt;/i&gt;">Color</button></p><p><button class="btn btn-default btn-block tutorial-standard disabled" data-toggle="tooltip" data-placement="left" title="" data-original-title="&lt;b&gt;Du benötigst Intro I+II+III&lt;/b&gt;&lt;br/&gt;Kommuniziere mit anderen BOB3 Einheiten&lt;br/&gt;Medals: &lt;i class=&#39;medal-xs medal-coder&#39;&gt;&lt;/i&gt;&lt;i class=&#39;medal-xs medal-comm&#39;&gt;&lt;/i&gt;&lt;i class=&#39;medal-xs medal-comm&#39;&gt;&lt;/i&gt;&lt;i class=&#39;medal-xs medal-pokal&#39;&gt;&lt;/i&gt;">Comm</button></p><p><a class="btn btn-default btn-block tutorial-free" href="https://www.progbob.org/de/bob3/custom/free" role="button" data-toggle="tooltip" data-placement="left" title="" data-original-title="Eigene Programme"><i class="fa fa-rocket" aria-hidden="true"></i> free</a></p>          </aside>
+        </div>
+      </div>
+
+    </article>
+
+    <nav class="navbar navbar-inverse navbar-fixed-bottom">
+      <div class="container">
+
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar2" aria-expanded="false" aria-controls="navbar2">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar2" class="navbar-collapse collapse">
+          <div class="navbar-form navbar-left">
+            <div style="display: inline-block; position:relative;">
+                                    <button id="btn-compile" class="with-navigation-hint btn btn-success btn-lg">Compile <span class="glyphicon glyphicon-play" aria-hidden="true"></span></button>
+                                <div id="navigation-hint-compile" class="navigation-hint-div"><i class="navigation-hint-arrow glyphicon glyphicon-chevron-down"></i></div>
+            </div>
+            <a id="btn-warn" class="btn btn-warning btn-lg" style="display: none" href="https://www.progbob.org/de/bob3/tutorials/intro2/if_else_3.html#"><i class="fa fa-exclamation-triangle fa-lg" aria-hidden="true"></i></a>
+            <a id="btn-bug" class="btn btn-danger btn-lg" style="display: none" href="https://www.progbob.org/de/bob3/tutorials/intro2/if_else_3.html#"><i class="fa fa-bug fa-lg" aria-hidden="true"></i> <span>Bugs detected!</span></a>
+            <div style="display: inline-block; position:relative;">
+                <a id="btn-file" class="with-navigation-hint btn btn-primary btn-lg" style="display: none" href="https://www.progbob.org/de/bob3/tutorials/intro2/if_else_3.html#"><i class="fa fa-file-code-o fa-lg" aria-hidden="true"></i> <span>hexfile.bob3</span></a>
+                <div id="navigation-hint-file" class="navigation-hint-div"><i class="navigation-hint-arrow glyphicon glyphicon-chevron-down"></i></div>
+            </div>
+            
+          </div>
+          <div class="navbar-form navbar-right">
+            <a id="btn-prev-chapter" class="btn btn-default btn-lg" href="https://www.progbob.org/de/bob3/tutorials/intro2/if_else_2.html"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
+
+            <div id="btn-next-chapter-span" style="display: inline-block">
+            <div style="display: inline-block; position:relative;">
+                <a id="btn-next-chapter" class="with-navigation-hint btn btn-warning btn-lg" href="https://www.progbob.org/de/bob3/tutorials/intro2/heizung.html">Next chapter <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                <div id="navigation-hint-next-chapter" class="navigation-hint-div"><i class="navigation-hint-arrow glyphicon glyphicon-chevron-down"></i></div>
+            </div>
+            </div>
+          </div>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+
+    
+    
+
+    <!-- SlideOut 1 - - - Colors -->
+    <aside class="slideout" id="slideout1">
+      <div class="title"><a href="https://www.progbob.org/de/bob3/tutorials/intro2/if_else_3.html#"><span class="glyphicon glyphicon-tint"></span></a></div>
+      <div class="inner">
+        <h4>Colors</h4>        
+        <div class="hide-block-less-750-px-height" style="color: #000; background: #fff; padding: 1em; border-radius: 12px;">
+          <i class="color" style="background: #000"></i> <code class="cm-s-default"><span class="cm-variable-2 click-copy">OFF</span></code><br>
+          <i class="color color-white" style="background: #fff"></i> <code class="cm-s-default"><span class="cm-variable-2 click-copy">WHITE</span></code><br>
+          <div class="spacer"></div>
+          <i class="color" style="background: #ff0"></i> <code class="cm-s-default"><span class="cm-variable-2 click-copy">YELLOW</span></code><br>
+          <i class="color" style="background: #f80"></i> <code class="cm-s-default"><span class="cm-variable-2 click-copy">ORANGE</span></code><br>
+          <i class="color" style="background: #d42"></i> <code class="cm-s-default"><span class="cm-variable-2 click-copy">KABARED</span></code><br>
+          <i class="color" style="background: #f00"></i> <code class="cm-s-default"><span class="cm-variable-2 click-copy">RED</span></code><br>
+          <i class="color" style="background: #800"></i> <code class="cm-s-default"><span class="cm-variable-2 click-copy">COLERED</span></code><br>
+          <div class="spacer"></div>
+          <i class="color" style="background: #f0f"></i> <code class="cm-s-default"><span class="cm-variable-2 click-copy">FUCHSIA</span></code><br>          
+          <i class="color" style="background: #f08"></i> <code class="cm-s-default"><span class="cm-variable-2 click-copy">PURPLE</span></code><br>
+          <i class="color" style="background: #808"></i> <code class="cm-s-default"><span class="cm-variable-2 click-copy">UNICORN</span></code><br>
+          <i class="color" style="background: #63a"></i> <code class="cm-s-default"><span class="cm-variable-2 click-copy">VIOLET</span></code><br>
+          <div class="spacer"></div>          
+          <i class="color" style="background: #0ff"></i> <code class="cm-s-default"><span class="cm-variable-2 click-copy">CYAN</span></code><br>
+          <i class="color" style="background: #8fd"></i> <code class="cm-s-default"><span class="cm-variable-2 click-copy">AQUAMARINE</span></code><br>
+          <i class="color" style="background: #00f"></i> <code class="cm-s-default"><span class="cm-variable-2 click-copy">BLUE</span></code><br>
+          <i class="color" style="background: #46e"></i> <code class="cm-s-default"><span class="cm-variable-2 click-copy">ROYALBLUE</span></code><br>
+          <div class="spacer"></div>
+          <i class="color" style="background: #282"></i> <code class="cm-s-default"><span class="cm-variable-2 click-copy">FORESTGREEN</span></code><br>
+          <i class="color" style="background: #5f9"></i> <code class="cm-s-default"><span class="cm-variable-2 click-copy">SEAGREEN</span></code><br>
+          <i class="color" style="background: #0f0"></i> <code class="cm-s-default"><span class="cm-variable-2 click-copy">GREEN</span></code><br>
+        </div>
+        <div class="show-block-less-750-px-height" style="color: #000; background: #fff; padding: 1em; border-radius: 12px;">
+          <div style="float:left">
+            <i class="color" style="background: #000"></i> <code class="cm-s-default"><span class="cm-variable-2 click-copy">OFF</span></code><br>
+            <i class="color color-white" style="background: #fff"></i> <code class="cm-s-default"><span class="cm-variable-2 click-copy">WHITE</span></code><br>
+            <div class="spacer"></div>
+            <i class="color" style="background: #0ff"></i> <code class="cm-s-default"><span class="cm-variable-2 click-copy">CYAN</span></code><br>
+            <i class="color" style="background: #8fd"></i> <code class="cm-s-default"><span class="cm-variable-2 click-copy">AQUAMARINE</span></code><br>
+            <i class="color" style="background: #00f"></i> <code class="cm-s-default"><span class="cm-variable-2 click-copy">BLUE</span></code><br>
+            <i class="color" style="background: #46e"></i> <code class="cm-s-default"><span class="cm-variable-2 click-copy">ROYALBLUE</span></code><br>
+            <div class="spacer"></div>
+            <i class="color" style="background: #282"></i> <code class="cm-s-default"><span class="cm-variable-2 click-copy">FORESTGREEN</span></code><br>
+            <i class="color" style="background: #5f9"></i> <code class="cm-s-default"><span class="cm-variable-2 click-copy">SEAGREEN</span></code><br>
+            <i class="color" style="background: #0f0"></i> <code class="cm-s-default"><span class="cm-variable-2 click-copy">GREEN</span></code><br>
+          </div>
+          <div>
+            <i class="color" style="background: #ff0"></i> <code class="cm-s-default"><span class="cm-variable-2 click-copy">YELLOW</span></code><br>
+            <i class="color" style="background: #f80"></i> <code class="cm-s-default"><span class="cm-variable-2 click-copy">ORANGE</span></code><br>
+            <i class="color" style="background: #d42"></i> <code class="cm-s-default"><span class="cm-variable-2 click-copy">KABARED</span></code><br>
+            <i class="color" style="background: #f00"></i> <code class="cm-s-default"><span class="cm-variable-2 click-copy">RED</span></code><br>
+            <i class="color" style="background: #800"></i> <code class="cm-s-default"><span class="cm-variable-2 click-copy">COLERED</span></code><br>
+            <div class="spacer"></div>
+            <i class="color" style="background: #f0f"></i> <code class="cm-s-default"><span class="cm-variable-2 click-copy">FUCHSIA</span></code><br>          
+            <i class="color" style="background: #f08"></i> <code class="cm-s-default"><span class="cm-variable-2 click-copy">PURPLE</span></code><br>
+            <i class="color" style="background: #808"></i> <code class="cm-s-default"><span class="cm-variable-2 click-copy">UNICORN</span></code><br>
+            <i class="color" style="background: #63a"></i> <code class="cm-s-default"><span class="cm-variable-2 click-copy">VIOLET</span></code><br>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    
+    
+    <!-- SlideOut 2  - - - B-O-B-3 -->
+    <aside class="slideout" id="slideout2">
+      <div class="title"><a href="https://www.progbob.org/de/bob3/tutorials/intro2/if_else_3.html#"><span class="glyphicon glyphicon-pushpin"></span></a></div>
+      <div class="inner">
+        <h4>BOB3 - Übersicht</h4>
+        <div style="color: #000; background: #fff; padding: 1em; border-radius: 12px;">
+          <!--img src="/pictures/bob3_front.png" style="width:200px;" alt="B-O-B-3 Übersicht"/-->
+          <object style="width: 100%;" data="./ProgBob - Intro II - if else - Teil 3_files/bob3_overview3.svg" type="image/svg+xml"></object>
+        </div>
+      </div>
+    </aside>
+
+    
+    
+    <!-- SlideOut 3  - - -  Functions -->
+    <aside class="slideout" id="slideout3">
+      <div class="title"><a href="https://www.progbob.org/de/bob3/tutorials/intro2/if_else_3.html#"><span class="glyphicon glyphicon-book"></span></a></div>
+      <div class="inner">
+      
+        <h4>Bibliothek</h4>
+        <div style="color: #000; background: #fff; padding: 1em; border-radius: 12px;">
+          <!-- ********** -->
+          <button class="btn" type="button" data-toggle="collapse" data-target="#collapseBob3Methods" data-parent="#slideout3" aria-expanded="true" aria-controls="collapseBob3Methods"><span class="collaps-icon">BOB3 - Methoden:</span>
+          </button>
+          <div id="collapseBob3Methods" class="collapse in">
+            <pre class="cm-s-default"><span data-toggle="popover" title="" data-content="&lt;b&gt;id&lt;/b&gt;: Nummer der LED (1 - 4) oder&lt;br/&gt;  Konstante (EYE_1, EYE_2, LED_3, LED_4)&lt;br/&gt;&lt;b&gt;color&lt;/b&gt;: Farbkonstante / hexadezimaler Farbwert" data-original-title="Setzt die Farbe für eine LED"><span class="cm-variable-3">void</span> <b class="cm-variable-2 click-copy">bob3.setLed</b>(id, color)</span>
+<span data-toggle="popover" title="" data-content="&lt;b&gt;color1&lt;/b&gt;: Farbkonstante / hexadezimaler Farbwert für Auge 1&lt;br/&gt;&lt;b&gt;color2&lt;/b&gt;: Farbkonstante / hexadezimaler Farbwert für Auge 2" data-original-title="Setzt die Farbe für beide Augen gleichzeitig"><span class="cm-variable-3">void</span> <b class="cm-variable-2 click-copy">bob3.setEyes</b>(color1, color2)</span>
+<span data-toggle="popover" title="" data-content="&lt;b&gt;status1&lt;/b&gt;: OFF, false oder 0 für &lt;b&gt;aus&lt;/b&gt;&lt;br/&gt;  ON, WHITE, true oder 1 für &lt;b&gt;an&lt;/b&gt;&lt;br/&gt;&lt;b&gt;status2&lt;/b&gt;: OFF, false oder 0 für &lt;b&gt;aus&lt;/b&gt;&lt;br/&gt;  ON, WHITE, true oder 1 für &lt;b&gt;an&lt;/b&gt;" data-original-title="Schaltet die beiden weissen LEDs gleichzeitig"><span class="cm-variable-3">void</span> <b class="cm-variable-2 click-copy">bob3.setWhiteLeds</b>(status1, status2)</span>
+<span data-toggle="popover" title="" data-content="&lt;b&gt;id&lt;/b&gt;: Nummer (1 - 4) der LED&lt;br/&gt;  oder Konstante (EYE_1, EYE_2, LED_3, LED_4)&lt;br/&gt;&lt;b&gt;Ergebnis&lt;/b&gt;: hexadezimaler Farbwert (0x000 - 0xfff)" data-original-title="Liefert den Farbwert für eine Led zurück"><span class="cm-variable-3">int</span> <b class="cm-variable-2 click-copy">bob3.getLed</b>(id)</span>
+<span data-toggle="popover" title="" data-content="&lt;b&gt;id&lt;/b&gt;: Nummer des Arms (1 oder 2)&lt;br/&gt;&lt;b&gt;Ergebnis&lt;/b&gt;:&lt;br/&gt;0 = keine Berührung&lt;br/&gt;1 = oben&lt;br/&gt;2 = mittig&lt;br/&gt;3 = unten&lt;br/&gt;" data-original-title="Liefert den aktuellen Wert des Touch Sensors"><span class="cm-variable-3">int</span> <b class="cm-variable-2 click-copy">bob3.getArm</b>(id)</span>
+<span data-toggle="popover" title="" data-content="&lt;b&gt;id&lt;/b&gt;: Nummer des Arms (1 oder 2)&lt;br/&gt;&lt;b&gt;enable&lt;/b&gt;: 1=aktiviert, 0=deaktiviert" data-original-title="Aktiviert bzw. deaktiviert den Sensor"><span class="cm-variable-3">void</span> <b class="cm-variable-2 click-copy">bob3.enableArms</b>(enable)</span>
+<span data-toggle="popover" title="" data-content="&lt;b&gt;Ergebnis&lt;/b&gt;: 0-255 (ca. 5-10 bei vorgehaltener Hand,&lt;br/&gt;  0 wenn nichts reflektiert wird)" data-original-title="Liefert den Wert des IR-Reflexions-Sensors"><span class="cm-variable-3">int</span> <b class="cm-variable-2 click-copy">bob3.getIRSensor</b>()</span>
+<span data-toggle="popover" title="" data-content="&lt;b&gt;Ergebnis&lt;/b&gt;: 0-255 (255 direktes Sonnenlicht, &lt;br/&gt;  0 bei Dunkelheit)" data-original-title="Liefert den Wert des IR-Umgebungslicht"><span class="cm-variable-3">int</span> <b class="cm-variable-2 click-copy">bob3.getIRLight</b>()</span>
+<span data-toggle="popover" title="" data-content="&lt;b&gt;enable&lt;/b&gt;: 1=aktiviert, 0=deaktiviert" data-original-title="Aktiviert bzw. deaktiviert den Sensor"><span class="cm-variable-3">void</span> <b class="cm-variable-2 click-copy">bob3.enableIRSensor</b>(enable)</span>
+<span data-toggle="popover" title="" data-content="&lt;b&gt;Ergebnis&lt;/b&gt;: 0-255" data-original-title="Liefert die aktuelle Temperatur"><span class="cm-variable-3">int</span> <b class="cm-variable-2 click-copy">bob3.getTemperature</b>()</span>
+<span data-toggle="popover" title="" data-content="&lt;b&gt;Ergebnis&lt;/b&gt;: Spannung in Millivolt (3000 ≙ 3.0 Volt)" data-original-title="Liefert die aktuelle Versorgungsspannung"><span class="cm-variable-3">int</span> <b class="cm-variable-2 click-copy">bob3.getMillivolt</b>()</span>
+<span data-toggle="popover" title="" data-content="&lt;b&gt;Ergebnis&lt;/b&gt;: eingestellte ID (0 bis 31)" data-original-title="Liefert die BOB3-ID"><span class="cm-variable-3">int</span> <b class="cm-variable-2 click-copy">bob3.getID</b>()</span>
+<span data-toggle="popover" title="" data-content="&lt;b&gt;timeout&lt;/b&gt;: Zeit im Milisekunden, die auf eine Message gewartet werden soll&lt;br/&gt;  (1000 ≙ 1 Sekunde)&lt;br/&gt;&lt;b&gt;Ergebnis&lt;/b&gt;: Übertragene Message (0-255) oder -1 falls kein Signal empfangen wurde" data-original-title="Empfängt eine IR Message"><span class="cm-variable-3">int</span> <b class="cm-variable-2 click-copy">bob3.receiveMessage</b>(timeout)</span>
+<span data-toggle="popover" title="" data-content="&lt;b&gt;message&lt;/b&gt;: Zahl die übertragen werden soll (0-255)" data-original-title="Sendet eine IR Message"><span class="cm-variable-3">void</span> <b class="cm-variable-2 click-copy">bob3.transmitMessage</b>(message)</span></pre>
+          </div>
+          <!-- ********** -->
+          <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseBob3Functions" data-parent="#slideout3" aria-expanded="false" aria-controls="collapseBob3Functions">
+            <span class="collaps-icon">Globale Funktionen:</span>
+          </button>
+          <div id="collapseBob3Functions" class="collapse">
+            <pre class="cm-s-default"><span data-toggle="popover" title="" data-content="&lt;b&gt;milliseconds&lt;/b&gt;: Zeit in Millisekunden (1000 ms ≙ 1 s)&lt;br&gt;Maximal 6,5 Sekunden!" data-original-title="Wartet die angegebene Zeit"><span class="cm-variable-3">void</span> <b class="cm-variable-2 click-copy">delay</b>(milliseconds)</span>
+<span data-toggle="popover" title="" data-content="&lt;b&gt;color1&lt;/b&gt;: hexadezimaler Farbwert 1 (0x000 - 0xfff)&lt;/br&gt;&lt;b&gt;color2&lt;/b&gt;: hexadezimaler Farbwert 2 (0x000 - 0xfff)&lt;/br&gt;&lt;b&gt;w1&lt;/b&gt;: Gewichtung Farbe 1 (0-255)&lt;/br&gt;&lt;b&gt;w2&lt;/b&gt;: Gewichtung Farbe 2 (0-255)&lt;/br&gt;&lt;b&gt;Ergebnis&lt;/b&gt;: hexadezimaler Farbwert (0x000 - 0xfff)" data-original-title="Mischt zwei Farben"><span class="cm-variable-3">int</span> <b class="cm-variable-2 click-copy">mixColor</b>(color1, color2, w1, w2)</span>
+<span data-toggle="popover" title="" data-content="&lt;b&gt;red&lt;/b&gt;: Rot-Anteil (0-15)&lt;/br&gt;&lt;b&gt;green&lt;/b&gt;: Grün-Anteil (0-15)&lt;/br&gt;&lt;b&gt;blue&lt;/b&gt;: Blau-Anteil (0-15)&lt;/br&gt;&lt;b&gt;Ergebnis&lt;/b&gt;: hexadezimaler Farbwert (0x000 - 0xfff)" data-original-title="Berechnet den hexadezimalen Farbwert"><span class="cm-variable-3">int</span> <b class="cm-variable-2 click-copy">rgb</b>(red, green, blue)</span>
+<span data-toggle="popover" title="" data-content="&lt;b&gt;hue&lt;/b&gt;: Farbwinkel [°] (0-360)&lt;/br&gt;&lt;b&gt;sat&lt;/b&gt;: Sättigung [%] (0-100)&lt;/br&gt;&lt;b&gt;val&lt;/b&gt;: Helligkeit [%] (0-100)&lt;/br&gt;&lt;b&gt;Ergebnis&lt;/b&gt;: hexadezimaler Farbwert (0x000 - 0xfff)" data-original-title="Berechnet den hexadezimalen Farbwert"><span class="cm-variable-3">int</span> <b class="cm-variable-2 click-copy">hsv</b>(hue, sat, val)</span>
+<span data-toggle="popover" title="" data-content="&lt;b&gt;value&lt;/b&gt;: Der Zahlenwert (–32768 bis +32767), den BOB3 sich merken soll..." data-original-title="Speichert einen Zahlenwert im EEPROM, der Wert bleibt auch nach dem ausschalten erhalten!"><span class="cm-variable-3">void</span> <b class="cm-variable-2 click-copy">remember</b>(value)</span>
+<span data-toggle="popover" title="" data-content="&lt;b&gt;Ergebnis&lt;/b&gt;: Der gespeicherte Zahlenwert, falls noch keine Zahl gespeichert wurde, liefert die funktion den Wert 0" data-original-title="Liefert den gespeicherten Zahlenwert aus dem EEPROM zurück"><span class="cm-variable-3">int</span> <b class="cm-variable-2 click-copy">recall</b>()</span>
+<span data-toggle="popover" title="" data-content="&lt;b&gt;zahl1&lt;/b&gt;: kleinste Zahl - Anfang des Bereichs&lt;br&gt;&lt;b&gt;zahl2&lt;/b&gt;: grösste Zahl - Ende des Bereichs&lt;br&gt; &lt;b&gt;Ergebnis&lt;/b&gt;: Zufallszahl aus dem angegebenen Bereich" data-original-title="Liefert eine zufällige Zahl"><span class="cm-variable-3">int</span> <b class="cm-variable-2 click-copy">randomNumber</b>(zahl1, zahl2)</span>
+<span data-toggle="popover" title="" data-content="&lt;b&gt;nullen&lt;/b&gt;: Anzahl der Null-Bits&lt;br&gt;&lt;b&gt;einsen&lt;/b&gt;: Anzahl der Eins-Bits&lt;br&gt;&lt;b&gt;Ergebnis&lt;/b&gt;: Die Bitfolge als Zahl" data-original-title="Liefert eine zufällige Bitfolge"><span class="cm-variable-3">int</span> <b class="cm-variable-2 click-copy">randomBits</b>(nullen, einsen)</span></pre>
+          </div>
+          <!-- ********** -->
+          <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseUtilFunctions" data-parent="#slideout3" aria-expanded="false" aria-controls="collapseUtilFunctions">
+            <span class="collaps-icon">Globale Hilfsfunktionen:</span>
+          </button>
+          <div id="collapseUtilFunctions" class="collapse">
+            <pre class="cm-s-default"><span data-toggle="popover" title="" data-content="&lt;b&gt;zahl1&lt;/b&gt;: erste Zahl&lt;br&gt;&lt;b&gt;zahl2&lt;/b&gt;: zweite Zahl&lt;br&gt;&lt;b&gt;Ergebnis&lt;/b&gt;: die kleinere der beiden Zahlen&lt;br&gt;" data-original-title="Liefert die kleinere von zwei Zahlen"><span class="cm-variable-3">int</span> <b class="cm-variable-2 click-copy">min</b>(zahl1, zahl2)</span>
+<span data-toggle="popover" title="" data-content="&lt;b&gt;zahl1&lt;/b&gt;: erste Zahl&lt;br&gt;&lt;b&gt;zahl2&lt;/b&gt;: zweite Zahl&lt;br&gt;&lt;b&gt;Ergebnis&lt;/b&gt;: die größere der beiden Zahlen&lt;br&gt;" data-original-title="Liefert die größere von zwei Zahlen"><span class="cm-variable-3">int</span> <b class="cm-variable-2 click-copy">max</b>(zahl1, zahl2)</span>
+<span data-toggle="popover" title="" data-content="&lt;b&gt;zahl&lt;/b&gt;: zu beschränkender Wert&lt;br&gt;&lt;b&gt;minimum&lt;/b&gt;: Minimalwert&lt;br&gt;&lt;b&gt;maximum&lt;/b&gt;: Maximalwert&lt;br&gt;&lt;b&gt;Ergebnis&lt;/b&gt;: beschränkter Wert von &lt;b&gt;zahl&lt;/b&gt;&lt;br&gt;" data-original-title="Zahlenwert beschränken"><span class="cm-variable-3">int</span> <b class="cm-variable-2 click-copy">constrain</b>(zahl, minimum, maximum)</span>
+<span data-toggle="popover" title="" data-content="&lt;b&gt;zahl1&lt;/b&gt;: die erste Zahl&lt;br&gt;&lt;b&gt;zahl2&lt;/b&gt;: die zweite Zahl&lt;br&gt;&lt;b&gt;Ergebnis&lt;/b&gt;: die Differenz der beiden Zahlen (immer positiv!)&lt;br&gt;" data-original-title="Liefert den Absolutwert der Differenz von zwei Zahlen"><span class="cm-variable-3">int</span> <b class="cm-variable-2 click-copy">absdiff</b>(zahl1, zahl2)</span></pre>
+          </div>
+          <!-- ********** -->
+
+
+        </div>
+      </div>
+    </aside>
+
+
+
+    <!-- Bug Detected Modal -->
+    <div id="modal-bug-detected" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content"><form>
+          
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">×</button>
+            <h4 class="modal-title"><span class="fa fa-bug" aria-hidden="true"></span> Bug detected!</h4>
+          </div>
+          <div class="modal-body">
+            <p>Der Compiler hat einen Fehler gefunden:</p>
+            <p id="div-bug-detected-description"></p>
+          </div>
+          <div class="modal-footer">
+            <button id="btn-bug-detected-ok" type="submit" class="btn btn-success" data-dismiss="modal"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> OK</button>
+          </div>
+        </form></div>
+
+      </div>
+    </div>
+    <!-- Bug Detected Modal * END * -->
+    
+    
+    
+    <input id="user-name" type="hidden" name="user-name" value="hxy-Filip"> 
+    <input id="user-contact" type="hidden" name="user-contact" value="">
+    
+
+<!-- Popup messages Modal -->
+    <div id="modal-popup-messages" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <h4 id="modal-popup-messages-caption" class="modal-title">...</h4>
+          </div>
+          <div class="modal-body">
+            <p id="modal-popup-messages-content">...</p>
+          </div>
+          <div class="modal-footer">
+            <button id="modal-popup-messages-ok" type="submit" class="btn btn-success" data-dismiss="modal"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> OK</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div id="progbob" class="hidden"><!-- event DOM object --></div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="./ProgBob - Intro II - if else - Teil 3_files/jquery.color-2.1.2.min.js.Herunterladen"></script>
+    <script src="./ProgBob - Intro II - if else - Teil 3_files/bootstrap.min.js.Herunterladen"></script>
+    <script src="./ProgBob - Intro II - if else - Teil 3_files/jquery-ui.min.js.Herunterladen"></script>
+
+    <script src="./ProgBob - Intro II - if else - Teil 3_files/tinymce.min.js.Herunterladen"></script>
+    <script src="./ProgBob - Intro II - if else - Teil 3_files/jquery.tinymce.min.js.Herunterladen"></script>
+    <script src="./ProgBob - Intro II - if else - Teil 3_files/tinymce_plugin_quiz.js.Herunterladen"></script>
+
+    <script src="./ProgBob - Intro II - if else - Teil 3_files/8E3C23BFBA6950385FA94BD5A510F20_ycp.js.Herunterladen"></script>
+
+    <script>
+    var messages=[];
+    var lecture_achievements=["code","quiz1","finished","quiz1-solved"];
+    var required_lecture_achievements=["quiz1-solved","code"];
+    var server_data = { 
+      bob_edition: 2,
+    };
+    
+    
+    $(document).ready(function(){
+      //$("#btn-next-chapter-span").tooltip({html:true, title:'<i class="fa fa-user-secret fa-3x fa-pull-left" aria-hidden="true"></i><i class="fa fa-ban" aria-hidden="true"></i>&ensp;<b>Nicht so schnell!</b><br/>Löse zuerst die Aufgaben und das Quiz!'});
+      $('.txt-next-chapter').mouseenter(function() {$('#navigation-hint-next-chapter').stop().fadeIn();})
+                            .mouseleave(function() {$('#navigation-hint-next-chapter').stop().fadeOut(1000);});
+      $('.txt-file').mouseenter(function() {$('#navigation-hint-file').stop().fadeIn();})
+                    .mouseleave(function() {$('#navigation-hint-file').stop().fadeOut(1000);});
+      $('.txt-compile').mouseenter(function() {$('#navigation-hint-compile').stop().fadeIn();})
+                       .mouseleave(function() {$('#navigation-hint-compile').stop().fadeOut(1000);});
+    });
+
+    </script>
+  
+
+</body></html>
